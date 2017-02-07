@@ -22,3 +22,4 @@ list.delete_node(node2)
 pp list.find_nth_node(2)
 
 pp list
+pp list.reverse_list

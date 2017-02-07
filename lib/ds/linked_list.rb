@@ -56,4 +56,19 @@ class LinkedList
       return temp
     end
   end
+
+  # reverse the linked list
+  def reverse_list
+    next_node = nil
+    current_node = head
+    previous_node = nil
+    while current_node
+      next_node = current_node.next_node
+      current_node.next_node = previous_node
+      previous_node = current_node
+      current_node = next_node
+    end
+    @head = previous_node
+    self
+  end
 end
