@@ -40,4 +40,20 @@ class LinkedList
       return false # nothing to delete
     end
   end
+
+  # find nth node
+  def find_nth_node(n)
+    return nil if n <= 0
+    if n == 1
+      return head
+    else
+      i = 1
+      temp = head
+      while i != n && !temp.nil?
+        temp = temp.next_node
+        i += 1
+      end
+      return temp
+    end
+  end
 end

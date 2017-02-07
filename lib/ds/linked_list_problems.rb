@@ -11,9 +11,14 @@ list = LinkedList.new(node1)
 
 # Add a node
 list.add_node(node2)
+list.add_node(node3)
+list.add_node(node4)
 pp list
 
 # Delete a node
 list.delete_node(node2)
+
+# find 2nd node
+pp list.find_nth_node(2)
 
 pp list
